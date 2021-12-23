@@ -130,6 +130,7 @@ address{
 
 
 .nav-link{
+    position: relative;
     display: block;
     padding-top: 32px;
     padding-bottom: 32px;
@@ -138,8 +139,36 @@ address{
     font-size: 14px;
     line-height: 1.1;
     letter-spacing: 0.02em; 
+    
 }
 
+.nav-link.current::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: currentColor;
+    border-radius: 2px;
+}
+
+.current{
+    color: var(--accent-color);
+}
+
+.nav-link.portfolio::after{
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -1px;
+    background-color: currentColor;
+    border-radius: 2px;
+}
 
 .portfolio{
     color: var(--accent-color)
