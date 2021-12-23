@@ -319,12 +319,18 @@ border: none;
     align-items: center;
 }
 
+.services-list.portfolio{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 94px;
+    justify-content: center;  
+}
+
 .services-list{
     display: flex;
     margin-bottom: 94px;
     justify-content: center;  
 }
-
 
 .services-item{
     display: list-item;
