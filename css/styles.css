@@ -437,6 +437,66 @@ border: none;
     background-image: url(../images/astronaut\ .svg);
 }
 
+
+/*===Animation==*/
+
+
+.services-preview:hover .pic-wrap::before,
+.services-preview:focus .pic-wrap::before{
+    background-color: rgba(33, 150, 243, 0.9);
+    transform: translateY(0);
+}
+
+
+.services-preview:hover .work-text,
+.services-preview:focus .work-text{
+    transform: translateY(0);
+}
+
+.pic-wrap{
+    position: relative;
+    overflow: hidden;
+    background-color: rgba(33, 150, 243, 0.9);
+}
+
+.pic-wrap::before{
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(33, 150, 243, 0.9);
+
+    transform: translateY(100%);
+    transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+}
+
+.pic-wrap{
+    display: block;
+    width: 100%;
+}
+
+.work-text{
+    color: var(--background-color);
+    margin: 0;
+    padding: 63px 24px;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    transform: translateY(100%);
+    transition: transform var(--transition-duration)
+    var(--transition-timing-function);
+
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.55;
+
+}
+
 .services-preview{
     width: 370px;
     height: 404px;
@@ -446,6 +506,9 @@ border: none;
     box-sizing: border-box;  
     text-align: left;  
     margin-bottom: 30px; 
+
+    transition: box-shadow var(--transition-duration)
+    var(--transition-timing-function);
 }
 
 .services-preview:nth-child(n+7){
