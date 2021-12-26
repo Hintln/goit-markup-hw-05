@@ -575,6 +575,7 @@ border: none;
 
 }
 
+
 .services-preview{
     width: 370px;
     height: 404px;
@@ -602,6 +603,7 @@ border: none;
 
 .services-preview:nth-child(3n){
     margin-right: 0px;
+    
 }
 
 .services-image+.services-image{
